@@ -4,14 +4,45 @@
     <title>Zongwei Tang's Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal website of Zongwei Tang, UC Berkeley applied mathematics student exploring computer science.">
+    <meta name="keywords" content="Zongwei Tang, UC Berkeley, applied mathematics, computer science, web development">
+    <meta name="author" content="Zongwei Tang">
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Zongwei Tang's Website">
+    <meta property="og:description" content="Personal website of Zongwei Tang, UC Berkeley applied mathematics student.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Zongwei-Tang.github.io">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="YhqrktuuSRiqgZZdAwwHbA.ico" type="image/x-icon">
 </head>
+<!-- 结构化数据 -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Zongwei Tang",
+      "url": "https://Zongwei-Tang.github.io",
+      "sameAs": [
+        "https://github.com/Zongwei-Tang",
+        "https://linkedin.com/in/zongwei-tang-2a123a31a/"
+      ],
+      "jobTitle": "Student",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "UC Berkeley"
+      },
+      "description": "Applied mathematics student at UC Berkeley exploring computer science."
+    }
+    </script>
 <body>
+    <div class="page-loader">
+        <div class="loader"></div>
+    </div>
     <!-- 导航栏 -->
     <header>
         <nav>
             <div class="logo">My website</div>
+            <div class="mobile-menu-btn">☰</div>
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -33,9 +64,50 @@
     <!-- 关于区域 -->
     <section id="about" class="about-section">
         <h2>About me</h2>
-        <p>I am a UC Berkeley student who majors in applied math.</p>
-        <p>I am trying to explore my interest in Computer Science area.</p>
-        <img src="images/IMG_1100.JPG" alt="网站横幅" class="hero-image">
+        <div class="about-container">
+            <div class="about-text">
+                <p>I am a UC Berkeley student who majors in applied math.</p>
+                <p>I am trying to explore my interest in Computer Science area.</p>
+            </div>
+            <img src="images/IMG_1100.JPG" alt="Zongwei Tang portrait - UC Berkeley applied mathematics student" class="about-image">
+        </div>
+        
+        <!-- 添加技能部分 -->
+        <div class="skills-container">
+            <h3>My Skills</h3>
+            <div class="skill-bars">
+                <div class="skill">
+                    <span class="skill-name">Mathematics</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">JavaScript</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span class="skill-name">Data Analysis</span>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
     <!-- 服务区域 -->

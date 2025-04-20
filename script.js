@@ -1,4 +1,39 @@
+// 页面加载完成后隐藏加载动画
+window.addEventListener('load', function() {
+    const loader = document.querySelector('.page-loader');
+    setTimeout(function() {
+        loader.classList.add('loaded');
+    }, 500); // 延迟500毫秒，确保动画平滑
+});
+
+// 其他现有JavaScript代码...
 document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const menu = document.querySelector('.menu');
+    
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    }
+    
+    // 点击菜单项后关闭菜单（在移动设备上）
+    const menuItems = document.querySelectorAll('.menu a');
+    menuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                menu.classList.remove('active');
+            }
+        });
+    });
+    
+    // 在窗口调整大小时处理菜单显示
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            menu.classList.remove('active');
+        }
+    });
+
     // 平滑滚动到锚点
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
