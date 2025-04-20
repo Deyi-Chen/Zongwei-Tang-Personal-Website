@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>我的个人网站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <nav>
+            <div class="logo">我的网站</div>
+            <ul class="menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#services">服务</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- 首页区域 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到我的网站</h1>
+            <p>这是我从零开始创建的个人网站</p>
+            <button class="cta-button">了解更多</button>
+        </div>
+    </section>
+    
+    <!-- 关于区域 -->
+    <section id="about" class="about-section">
+        <h2>关于我</h2>
+        <p>我是一名充满热情的网站开发者，致力于创建优秀的网站体验。</p>
+        <p>我的目标是掌握前端和后端技术，成为一名全栈开发工程师。</p>
+    </section>
+    
+    <!-- 服务区域 -->
+    <section id="services" class="services-section">
+        <h2>我的服务</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>网站设计</h3>
+                <p>创建美观、现代的网站设计，确保良好的用户体验。</p>
+            </div>
+            <div class="service-card">
+                <h3>网站开发</h3>
+                <p>使用最新技术构建响应式、高性能的网站。</p>
+            </div>
+            <div class="service-card">
+                <h3>网站维护</h3>
+                <p>提供定期更新和维护，确保您的网站始终运行良好。</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 联系区域 -->
+    <section id="contact" class="contact-section">
+        <h2>联系我</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">发送</button>
+        </form>
+    </section>
+    
+    <!-- 页脚 -->
+    <footer>
+        <p>&copy; 2025 我的网站. 保留所有权利.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
