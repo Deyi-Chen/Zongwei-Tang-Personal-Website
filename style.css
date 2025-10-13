@@ -10,11 +10,12 @@
   left: 0;
   width: 220px;
   height: 100vh;
-  background-color: #f8f9fa;
+  background-color: rgba(222, 232, 234, 0.8);
   transform: translateX(-100%);
   transition: transform 0.3s ease;
   padding-top: 60px;
   z-index: 10;
+  border: solid black;
 }
 
 
@@ -30,4 +31,68 @@
   height: 40px;
   width: 40px;
   z-index: 100;
+}
+
+#nameHead {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 50px;
+  margin-top: 40px;
+  color: white;
+}
+
+#profile {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#basic-introduction {
+  margin-top: 90px;
+  font-size: 20px;
+  background-color:antiquewhite
+}
+
+#contact {
+  color:white;
+}
+
+.sidebar-elements {
+  margin-top: 30px;
+  background-color: rgba(223, 223, 156, 0.5);
+  padding: 10px;
+}
+
+body {
+  background: url("Images/pexels-umkreisel-app-956999.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#first-row{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#card1 {
+  background-color: rgb(250, 230, 199);
+  border: solid;
+}
+
+#card2 {
+  background-color: rgb(250, 230, 199)
+}
+
+#Project {
+  color: white;
+  margin-top: 40px;
+}
+
+#Worldcraft {
+  margin-top: 20px;
+  background-color:antiquewhite;
 }
